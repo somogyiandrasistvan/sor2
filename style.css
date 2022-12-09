@@ -1,0 +1,136 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10px;
+    margin: 0px;
+    background-image: url(teglafal.jpg);
+}
+main{
+    border-width: 80%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "e m"
+    "e m"
+    "f f"
+    ;
+}
+header{
+    background-image: url(beer-new_401732638.jpg);
+    background-size: cover;
+    height: 300px;
+}
+h1{
+    font-weight: bold;
+    font-family: Garamond;
+    font-size: 32px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+    letter-spacing: 4px;
+}
+.menu{
+    list-style-type: none;
+    background-color: rgb(86, 86, 86);
+    border: 4px solid black;
+}
+li a {
+    font-weight: bold;
+    color: red;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    border-radius: 3px;
+}
+  
+li a:link{
+    background-color: rgb(86, 86, 86);
+    margin: 5px;
+}
+li a:hover {
+    color: white;
+    background-color: silver;
+}
+.tartalom{
+    text-align: justify;
+    font-size: 10px;
+    list-style-type: square;
+    border: 4px solid black;
+}
+h2{
+    font-size: 15px;
+    text-align: left;
+}
+#egesz{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "c c"
+    "k s"
+    ;
+    grid-area: e;
+}
+#kep{
+    grid-area: k;
+}
+#cim{
+    grid-area: c;
+}
+#szoveg{
+    grid-area: s;
+}
+nav{
+    grid-area: m;
+}
+#head{
+    grid-area: h;
+}
+#foot{
+    grid-area: f;
+}
+table {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+}
+td, th {
+    border: 1px solid gray;
+}
+tbody tr:nth-child(odd){
+    background-color: gray;
+}
+#tablazat{
+    background-color: black;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "h "
+      "m "
+      "e "
+      "f "
+      ;
+    }
+    #egesz{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "c "
+        "k "
+        "s "
+        ;
+    }
+}
